@@ -10921,4 +10921,17 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.nav-tabs {
+  --bs-nav-tabs-border-width: none;
+}
+
+.nav-tabs .nav-link {
+  border-bottom: 1px solid grey;
+  color: grey;
+}
+
+.nav-tabs .nav-link.active {
+  border-bottom: 3px solid red;
+  font-weight: bold;
 }/*# sourceMappingURL=custom.css.map */
