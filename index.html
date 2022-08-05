@@ -140,7 +140,7 @@
 
     
     <div class="container py-5">
-      <div class="row" style="min-height: 450px ;" >
+      <div class="row" style="min-height: 480px ;" >
         <div class="col-12 col-lg-4 px-lg-4 py-3 align-self-lg-start">
           <div class="card text-center rounded-3 border-0 align-items-center py-3 mx-4 shadow mb-5 bg-white rounded">
             <img src="./Imagenes/logo-chrome.svg" class="card-img-top h-25 w-25 m-4" alt="...">
@@ -249,10 +249,90 @@
             </div>
           </div>
         </div> 
-      </div>
+
+        <!-- Footer -->
+        <div class="container-fluid bg-primary py-5">
+          <div class="row flex-column text-center text-white align-items-center mb-0">
+            <div class="col-12 col-lg-6 pt-4 mx-auto">
+              <p class="lead fs-6 fw-normal">35.000+ ALREADY JOINED</p>
+            </div>
+            <div class="col-12 col-lg-6">
+              <h1 class="display-6 px-3 px-lg-5 pb-3">Stay up-to-date with what we're doing</h1>
+            </div>
+          </div>
+          
+          <!-- email -->
+          
+          <form class="row justify-content-center needs-validation" novalidate>
+
+            <div class="col-12 col-lg-3 my-2">
+              <input type="email" class="form-control" id="emailUser" placeholder="Enter your email address" required>
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback fst-italic text-white">
+                Email incorrecto
+              </div>
+            </div>
+
+            <div class="d-grid gap-2 col-12 col-lg-2 my-2" style="height: 40px;">
+              <button type="submit" class="btn btn-secondary text-white">Contact Us</button>
+            </div>
+            
+          </form>
+        </div>
+
+      <!-- nav -->
+
+      <nav class="navbar navbar-expand-lg mx-0" style="background-color: rgb(88, 88, 203);">
+        <div class="container flex-column flex-lg-row justify-content-center align-items-cente">
+          <a class="navbar-brand" href="#">
+            <img src="./Imagenes/logo-bookmark.svg">
+          </a>
+            <ul class="col-9 navbar-nav text-center px-0">
+              <li class="nav-item px-4">
+                <a class="nav-link" href="#">FEATURES</a>
+              </li>
+              <li class="nav-item px-4">
+                <a class="nav-link" href="#">PRICING</a>
+              </li>
+              <li class="nav-item px-4">
+                <a class="nav-link" href="#">CONTACT</a>
+              </li>
+            </ul>
+            <div class="nav-item d-flex px-4">
+              <a class="nav-link" href="#"><img src="./Imagenes/facebook.svg" class="px-3" alt=""></a>
+              <a class="nav-link" href="#"><img src="./Imagenes/twitter.svg" class="px-3" alt=""></a>
+            </div>
+        </div>
+      </nav>
+
+
+
     </div>
+  </div>
      
       <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script>
+
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+      </script>
     </body>
     </html>
-    
