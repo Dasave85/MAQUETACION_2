@@ -1,25 +1,65 @@
+
 $primary: #5265E1;
 $secondary: #FA5959;
 
 $accordion-button-color:                  $primary;
+$accordion-button-active-color:                  $secondary;
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+.navbar-nav {
+    --bs-nav-link-hover-color: #FA5959;
+}
+
+.btn-secondary {
+    --bs-btn-color: #f8f9fa;
+    --bs-btn-hover-color: #fa5959;
+    --bs-btn-hover-bg: #f8f9fa; 
+    --bs-btn-active-color: #fa5959; 
+}
+
+.btn-primary {
+    --bs-btn-hover-color: #5265E1;
+    --bs-btn-hover-bg: #f8f9fa; 
+    --bs-btn-active-color: #5265E1; 
+}
+
+.btn-light {
+    --bs-btn-hover-bg: #f8f9fa; 
+    --bs-btn-hover-border-color: #000;
+}
 
 .nav-tabs{
     --bs-nav-tabs-border-width: none;    
 }
 .nav-tabs .nav-link {
-   
+    
     border-bottom: 1px solid grey;
-   color: grey;
+    color: grey;
+    
+}
+.nav-tabs .nav-link:hover {
+    
+    
+    color: #FA5959;
+    
 }
 .nav-tabs .nav-link.active {
-   
+    
     border-bottom: 3px solid red;
     font-weight: bold;
 }
+
+.acc {
+    color: #000;
+}
+
+.acc:hover{
+    color:#FA5959;
+  }
+  
+
 
 
 

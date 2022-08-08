@@ -4,7 +4,7 @@
   "description": "Maquetacion II",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "purgecss --css sass/custom.css --content index.html -o sass/reducido.css"
   },
   "author": "",
   "license": "ISC",
